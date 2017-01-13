@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Calculator</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/calc-2.css">
+
+    <!-- jQuery & Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/big.js"></script>
+    <script type="text/javascript" src="js/script-calc.js"></script>
+
+  </head>
+  <body>
+
+    <div class="calculator-body">
+      <h4>Calculator</h4>
+      <div id="display">0</div>
+      <div class="keypad-container">
+      <div class="flex-container">
+      <div class="left-well">
+          <ul id="item-grp-1">
+            <li class="clear shadow" id="btn-ac">AC</li>
+            <li class="number-btn shadow" id="btn-7">7</li>
+            <li class="number-btn shadow" id="btn-4">4</li>
+            <li class="number-btn shadow" id="btn-1">1</li>
+          </ul>
+          <ul id="item-grp-2">
+            <li class="clear shadow" id="btn-ce">CE</li>
+            <li class="number-btn shadow" id="btn-8">8</li>
+            <li class="number-btn shadow" id="btn-5">5</li>
+            <li class="number-btn shadow" id="btn-2">2</li>
+          </ul>
+          <ul id="item-grp-3">
+            <li class="operator-btn shadow" id="btn-divide">/</li>
+            <li class="number-btn shadow" id="btn-9">9</li>
+            <li class="number-btn shadow" id="btn-6">6</li>
+            <li class="number-btn shadow" id="btn-3">3</li>
+          </ul>
+      </div>
+
+      <div class="right-well">
+          <ul class="btn-container-three">
+            <li class="operator-btn shadow" id="btn-times">*</li>
+            <li class="operator-btn shadow" id="btn-minus">-</li>
+            <li class="operator-btn shadow" id="btn-plus">+</li>
+            <li class="operator-btn shadow" id="btn-percent">%</li>
+          </ul>
+      </div>
+    </div> <!-- End  of flex container -->
+
+      <div class="bottom-well">
+        <ul class="btn-container-two">
+          <li class="number-btn shadow" id="btn-0">0</li>
+          <li class="number-btn shadow" id="btn-period">.</li>
+          <li class="equals-btn shadow" id="btn-equals">=</li>
+        </ul>
+      </div>
+
+    </div> <!-- End of keypad-->
+  </div>
+
+
+  </body>
+</html>

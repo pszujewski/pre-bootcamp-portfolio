@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Nova+Mono|VT323" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main-simon-2.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script-simon.js"></script>
+
+  </head>
+  <body>
+
+    <audio src="sounds/simonSound1.mp3" type="audio/mpeg" id="sound1"></audio>
+    <audio src="sounds/simonSound2.mp3" type="audio/mpeg" id="sound2"></audio>
+    <audio src="sounds/simonSound3.mp3" type="audio/mpeg" id="sound3"></audio>
+    <audio src="sounds/simonSound4.mp3" type="audio/mpeg" id="sound4"></audio>
+
+    <div class="gameContainer">
+
+      <div class="btnContainer">
+        <div class="flexbox">
+          <div class="button green" id="g1"></div>
+          <div class="button red" id="r2"></div>
+        </div>
+        <div class="flexbox">
+          <div class="button yellow" id="y3"></div>
+          <div class="button blue" id="b4"></div>
+        </div>
+      </div>
+
+      <div class="console">
+        <h2>Simon</h2>
+        <div class="push-Rt"><p class="dotNotActive" id="dot"></p></div>
+        <div class="list-container">
+          <ul id="list1">
+            <li id="countBar">--</li>
+            <li>Count</li>
+          </ul>
+          <ul id="list2">
+            <li class="roundBtn" id="startBtn"></li>
+            <li id="startLbl">Start</li>
+          </ul>
+          <ul id="list3">
+            <li class="roundBtn" id="strictBtn"></li>
+            <li>Strict</li>
+          </ul>
+        </div>
+        <div class="onOffContainer">
+          <p class="onOff" id="on">ON</p>
+          <div class="slider">
+            <div class="blackSlider" id="onSlide"></div>
+            <div class="activeBlueSlider" id="offSlide"></div>
+          </div>
+          <p class="onOff" id="off">OFF</p>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,150 @@
+body {
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  background-color: #f5f5f5;
+}
+
+h4 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  letter-spacing: 7px;
+  margin: 35px 0 20px;
+}
+
+.flex-container ul {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+#display {
+  background-color: #c3c2ab;
+  text-align: right;
+  border: 1px solid #b4b39d;
+  width: 70%;
+  margin: 20px auto 25px;
+  padding: 10px 10px;
+  border-radius: 3%;
+  letter-spacing: 0.5px;
+}
+
+.calculator-body {
+  width: 360px;
+  border: 1px solid #908b85;
+  margin: 100px auto;
+  border-radius: 3%;
+  background-color: #dfd8d0;
+  box-shadow: 1px 1px #444444;
+}
+
+.flex-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /*border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;*/
+}
+
+.left-well {
+  display: flex;
+}
+
+#item-grp-1 {
+  padding-left: 0;
+}
+
+.flex-container .operator-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 3px 13px;
+  border-radius: 3%;
+  background-color: #26a69a;
+  color: #fff;
+}
+
+.flex-container .number-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 3px 15px;
+  border-radius: 3%;
+  background-color: #26a69a;
+  color: #fff;
+}
+
+.flex-container .clear {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 3px 12px;
+  border-radius: 3%;
+  background-color: #e94f4d;
+  color: #fff;
+}
+
+#btn-percent {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 3px 13px;
+  border-radius: 3%;
+  background-color: #26a69a;
+  color: #fff;
+}
+
+.bottom-well {
+  /*border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;*/
+  border-radius: 2%;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+
+.bottom-well .number-btn, .bottom-well .equals-btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #26a69a;
+  color: #fff;
+}
+
+#btn-0 {
+  border-radius: 3%;
+  padding: 3px 57px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+#btn-period {
+  border-radius: 3%;
+  padding: 3px 21px;
+  margin-right: 15px;
+}
+
+.bottom-well .equals-btn {
+  margin-top: 8px;
+  border-radius: 3%;
+  padding: 10px 16px;
+}
+
+.btn-container-two {
+  padding: 0;
+}
+
+#item-grp-2, #item-grp-3, .btn-container-three {
+  padding-left: 20px;
+}
+
+.shadow {
+  box-shadow: 0 1.3px black;
+}
+
+.no-shadow {
+  box-shadow: 0 0;
+}

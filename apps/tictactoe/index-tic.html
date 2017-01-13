@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic-Tac-Toe</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="css/tic-main.css" type="text/css">
+
+    <!-- jQuery & JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script-tac.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+
+    <div class="largeContainer">
+      <div class="notificationContainer">
+        <p class="notify" id="notify1">Player One Go!</p>
+        <p class="notify" id="notify2">Player Two Go!</p>
+      </div>
+      <div class="gameContainer">
+
+        <div class="scoreboard">
+        <ul id="oneScore">
+          <li id="oneNumScore">0</li>
+          <li>Player 1</li>
+        </ul>
+        <ul id="twoScore">
+          <li id="twoNumScore">0</li>
+          <li id="scNm">Player 2</li>
+        </ul>
+        <p id="info"></p>
+      </div>
+        <div class="gameConsole">
+          <div class="grid">
+            <div class="faded">
+              <h3 id="prompt">Would you like to play a one or two player game?</h3>
+              <form>
+                <button class="btn" id="btn-one">One Player</button>
+                <button class="btn" id="btn-two">Two Players</button>
+              </form>
+            </div>
+              <ul class="row">
+                <li class="sq" id="1"><p class="sqContent"></p></li>
+                <li class="sq" id="2"><p class="sqContent"></p></li>
+                <li class="sq" id="3"><p class="sqContent"></p></li>
+              </ul>
+              <ul class="row">
+                <li class="sq" id="4"><p class="sqContent"></p></li>
+                <li class="sq" id="5"><p class="sqContent"></p></li>
+                <li class="sq" id="6"><p class="sqContent"></p></li>
+              </ul>
+              <ul class="row">
+                <li class="sq" id="7"><p class="sqContent"></p></li>
+                <li class="sq" id="8"><p class="sqContent"></p></li>
+                <li class="sq" id="9"><p class="sqContent"></p></li>
+              </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="btnContainer">
+      <button id="newGame">New Game</button>
+    </div>
+
+  </body>
+</html>

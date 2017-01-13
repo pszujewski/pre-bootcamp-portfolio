@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pomodoro Clock</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Damion|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/pom-main.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/pom-script.js"></script>
+
+  </head>
+  <body>
+    <audio id="sound" src="audio/communication-channel.mp3"></audio>
+    <h1 id="title">Pomodoro Timer</h1>
+    <div class="setTimeZone">
+      <div class="item" id="sessionTimeSetter">
+        <p>SESSION LENGTH</p>
+        <ul>
+          <li class="session-op">-</li>
+          <li id="Session">25</li>
+          <li class="session-op">+</li>
+        </ul>
+      </div>
+      <div class="item" id="breakTimeSetter">
+        <p>BREAK LENGTH</p>
+        <ul>
+          <li class="break-op">-</li>
+          <li id="Break">10</li>
+          <li class="break-op">+</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timerContainer">
+      <h1 id="timerName">START</h1>
+      <h3 id="timer">00:00</h3>
+    </div>
+
+    <div class="progressContainer">
+      <p id="motivation"></p>
+        <div id="progress" class="greenishBackground"></div>
+    </div>
+
+    <p class="btnContainer">
+      <button id="pauseBtn" class="btn">PAUSE</button>
+      <button id="resumeBtn" class="btn">RESUME</button>
+      <button id="resetBtn" class="btn">RESET</button>
+    </p>
+
+  </body>
+</html>
