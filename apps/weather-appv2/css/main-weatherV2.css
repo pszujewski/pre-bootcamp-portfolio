@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #263238;
+}
+
+.title {
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+}
+.title h1 {
+  font-size: 52px;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: #313e45;
+  width: 51%;
+  margin: 50px auto;
+  border-radius: 15px;
+  color: #fff;
+  padding: 0;
+}
+
+.top-half {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #263238;
+}
+
+.place {
+  /*width: 50%;*/
+}
+.place h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.place h3 {
+  margin-top: 5px;
+}
+
+.glyph-container {
+  display: flex;
+  justify-content: center;
+}
+i {
+  font-size: 160px;
+  padding: 30px 30px 30px 56px;
+}
+
+.btm-half {
+  display: flex;
+  border-top: 3px solid #263238;
+}
+
+.tempBin {
+  width: 45%;
+  text-align: center;
+  border-right: 3px solid #263238;
+}
+.tempBin h1 {
+  font-size: 54px;
+  padding-top: 30px;
+}
+
+.moreInfoBin {
+  border-left: 3px solid #263238;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.moreInfoBin ul {
+  list-style-type: none;
+  margin: 0;
+}
+.categories {
+  padding-left: 0;
+}

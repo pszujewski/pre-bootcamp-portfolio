@@ -6,17 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather App V2</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
     <link rel="stylesheet" type="text/css" href="css/main-weatherV2.css">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src=""></script>
+    <script type="text/javascript" src="js/script-weatherV2.js"></script>
 
   </head>
   <body>
 
+    <div class="title">
+      <h1>Weather Forecast</h1>
+    </div>
+
+      <div class="container">
+
+        <div class="top-half">
+            <div class="place">
+              <h1>City, Country</h1>
+              <h2>Friday</h2>
+              <h3>January 14, 2017</h2>
+              <h3>0:00 am</h3>
+            </div>
+            <div class="glyph-container">
+              <div id="glyph">
+                <i class="wi wi-night-sleet"></i>
+              </div>
+            </div>
+        </div>
+        <div class="btm-half">
+          <div class="tempBin">
+            <h1>50 &#8457;/ &#8451;</h2>
+          </div>
+          <div class="moreInfoBin">
+            <ul class="categories">
+              <li>Wind Speed</li>
+              <li>Humidity</li>
+              <li>Pressure</li>
+              <li>Sunrise</li>
+              <li>Sunset</li>
+            </ul>
+            <ul class="values">
+              <li>0 mph</li>
+              <li>0 %</li>
+              <li>0 hPa</li>
+              <li>0:00 am</li>
+              <li>0:00 pm</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
 
   </body>
 </html>
