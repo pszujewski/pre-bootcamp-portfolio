@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
-    <!-- Bootstrap
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main-portfolio.css">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -25,48 +25,68 @@
     <div class="header">
     <h1>Peter Szujewski</h1>
     <div class="btnGrp">
-      <button class="btn" id="about">ABOUT</button>
-      <button class="btn" id="portfolio">PORTFOLLIO</button>
-      <button class="btn" id="contact">CONTACT</button>
+      <button class="bttnn" id="about">ABOUT</button>
+      <button class="bttnn" id="portfolio">PROJECTS</button>
+      <button class="bttnn" id="contact">CONTACT</button>
     </div>
   </div>
 
-  <div class="jumbotron">
+  <div class="main">
   <div class="about">
       <div id="aboutTxt">
-        <h4>Boston University granduate and fluent French-speaker, I am an aspiring Front-End Web Developer who is currently working through the Free Code Camp Curriculum in coding and web development. I am also researching bootcamp opportunities. The purpose of this site is to showcase my progress and current projects. Thanks for taking a quick look!</h4>
-        <p>Motivated - Curious - Dedicated</p>
+        <h1 id="title">Aspiring Web Developer</h1>
+        <p id="intro">Graduate of Boston University and Sciences Po Paris, I am an aspiring Front-End Web Developer who is currently working through the Free Code Camp Curriculum in coding and web development. The purpose of this site is to showcase my progress, current projects, and facilitate my future applications to coding bootcamps.</p>
+        <p id="btmLine">Motivated - Self-starter - International Experience</p>
       </div>
       <div id="imgContainer">
         <img id="placeholderImg" src="http://static.giantbomb.com/uploads/original/0/26/9780-itsahim.JPG">
       </div>
     </div>
    <div class="portfolio">
-     <h2>PORTFOLIO</h2>
+     <h2>PROJECTS</h2>
      <div class="row">
-       <a href="apps/calc/index-clc-2.html"><img class="plcImg" src="images/calc.png"></a>
-       <a href="apps/pomodoro/pomodoro.html"><img class="plcImg" src="images/pomodoro.png"></a>
-       <a href="apps/simon/simon-index-2.html"><img class="plcImg" src="images/simon.png"></a>
+       <div class="proj">
+         <a href="apps/calc/index-clc-2.html"><img class="plcImg" src="images/calc.png"></a>
+         <p class="blurb">A Javascript calculator that chains mathematical operations</p>
+       </div>
+       <div class="proj">
+         <a href="apps/twitchv2/index-twitch-2.html"><img class="plcImg" src="images/twitch.png"></a>
+         <p class="blurb">View the status and activities of Twitch.TV users with this app built on the Twitch.TV API</p>
+       </div>
+       <div class="proj">
+         <a href="apps/simon/simon-index-2.html"><img class="plcImg" src="images/simon.png"></a>
+         <p class="blurb">A simple simon game. Correctly repeat the randomly generated audio and visual pattern to win the game</p>
+       </div>
      </div>
      <div class="row">
-       <a href="apps/twitchv2/index-twitch-2.html"><img class="plcImg" src="images/twitch.png"></a>
-       <img class="plcImg" src="http://www.magnifybyfaith.com/wp-content/uploads/2016/08/placeholder-square.jpg">
-       <a href="apps/tictactoe/index-tic.html"><img class="plcImg" src="images/tictactoe.png"></a>
+       <div class="proj">
+         <a href="apps/pomodoro/pomodoro.html"><img class="plcImg" src="images/pomodoro.png"></a>
+         <p class="blurb">Use this pomodoro timer to time your work sessions and breaks. A progress bar illustrates how much time has past</p>
+       </div>
+       <div class="proj">
+         <a href="apps/weather-appv2/index-weatherV2.html"><img class="plcImg" src="images/weather.png"></a>
+         <p class="blurb">View your local weather with this app built on the <a href="https://openweathermap.org/api">Open Weather Map API</a></p>
+       </div>
+       <div class="proj">
+         <a href="apps/tictactoe/index-tic.html"><img class="plcImg" src="images/tictactoe.png"></a>
+         <p class="blurb">A simple tic-tac-toe game with the option of playing in either one or two player mode</p>
+       </div>
+     </div>
+     <div class="linksBin">
+       <p class="link" id="linkOne"><a href="https://www.freecodecamp.com/pszujewski">View my FCC Profile</a></p>
+       <p class="link" id="linkTwo"><a href="https://github.com/pszujewski">Find me on GitHub </a></p>
      </div>
    </div>
 
    <div class="contact">
      <h2>CONTACT</h2>
      <div class="contactContent">
-       <form>
-         <input type="text" placeholder="Name"><br>
-         <input type="text" placeholder="Email Address"><br>
-         <input type="text" placeholder="Phone Number"><br>
-         <textarea rows="10" placeholder="Message"></textarea><br>
-         <div class="btnHolder"><button class="btnSml" type="submit">Submit</button></div>
-       </form>
-       <div>
-         <p>Please Don't hesitate to reach out, and thanks for taking a look at my page! If you have completed a coding bootcamp or are currently a bootcamp student, please email me; I'd love to have a chat!
+       <div class="contactLeft">
+         <h1>Send me an email!</h1>
+         <a href="mailto:pszujewski@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+       </div>
+       <div class="contactMsg">
+         <p>Thanks for taking a look at my page! I am currently very interested in learning more about coding bootcamps, so please email me if you have completed a coding bootcamp, are currently a bootcamp student, or if you know someone who is. Otherwise, I am always interested in meeting or exchanging with new people, so don't hesitate to reach out.
         </p>
        </div>
       </div>
@@ -80,10 +100,13 @@
        Free Code Camp. Coded by Peter Szujewski</h4>
     </div>
     <div id="item2">
-      <h2>SOCIAL MEDIA</h2>
+      <h2>ELSEWHERE ON THE WEB</h2>
       <div class="iconsBin">
-        <a href="https://www.linkedin.com/in/pszujewski"><img src="http://imageog.flaticon.com/icons/png/512/34/34227.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"></a>
-        <a href="https://github.com/pszujewski"><img src="http://www.iconsdb.com/icons/preview/black/github-6-xxl.png"></a>
+        <a href="https://www.linkedin.com/in/pszujewski"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/pszujewski"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/peter.henly"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/PSzujewski?lang=en"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://www.freecodecamp.com/pszujewski"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
