@@ -107,6 +107,7 @@ if (game === "") {
 
     // If it's Computer's turn
     if (player === Comp) {
+      disableClickEvents();
       setTimeout(computersMove, 1000);
     }
 
@@ -125,6 +126,7 @@ if (game === "") {
             resetVarstoDefault();
           } else if (gameCondition !== "End game") {
             // game condition is not equal to end game, so continue w/ comp's turn
+            disableClickEvents();
             setTimeout(computersMove, 1000);
           }
         } // If player variable is not set to ""
@@ -438,6 +440,7 @@ function winCheck(player) {
 
 function resetVarstoDefault() {
   console.log(player);
+  disableClickEvents();
   player = ""; // important to set this to empty to prevent duplication when click on newGame
   $("#newGame").fadeIn("slow"); // New game btn appears
   $("#newGame").one("click", function() { // When you click on new game btn, reset to default
@@ -452,6 +455,7 @@ function resetVarstoDefault() {
     oneFromWin = false;
     defense = false;
     // jQuery appearance in DOM
+    enableClicks();
     $("#info").text("");
     $(".sqContent").text("");
     $(".sq").css("background-color", "transparent");
@@ -465,15 +469,27 @@ function resetVarstoDefault() {
     playerNotification(); // Notify first player of their turn
     if (player === Comp) {
       // if it's comp's turn, it should have its move now
+      disableClickEvents();
       setTimeout(computersMove, 1000); // Fire comp's first move if it's their turn
     }
   }); // End of new game button
 }
 // End of reset vars to default function
 
+// disable click events --> temporarily
+function disableClickEvents() {
+  $(".sq").css("pointer-events", "none");
+  $(".sq").css("cursor", "wait");
+}
+function enableClicks() {
+  $(".sq").css("pointer-events", "auto");
+  $(".sq").css("cursor", "pointer");
+}
+
 // ======== Computers Move function ===========================
 
 var computersMove = function() {
+  enableClicks();
   // If comp is one sq from winning, take it
   isCloseToWin(); // Sets oneFromWin to true if comp can win now and gives a val to sqChoice
   if (!oneFromWin) {

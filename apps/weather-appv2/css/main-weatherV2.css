@@ -1,0 +1,99 @@
+body {
+  padding: 0;
+  margin: 0;
+  /*background-color: #263238;*/
+  background: url(../images/purpleclouds.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  /*background-color: #313e45;*/
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 51%;
+  margin: 90px auto 30px;
+  border-radius: 15px;
+  color: #fff;
+  padding: 0;
+}
+
+.top-half {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+  /*#263238;*/
+}
+
+.place h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.place h3 {
+  margin-top: 5px;
+}
+
+.glyph-container {
+  display: flex;
+  justify-content: center;
+}
+i {
+  font-size: 160px;
+  padding: 30px 0 30px 55px;
+}
+
+.btm-half {
+  display: flex;
+  border-top: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.tempBin {
+  width: 45%;
+  text-align: center;
+  border-right: 3px solid rgba(255, 255, 255, 0.1);
+}
+.tempBin h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 54px;
+}
+#description {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+#tempNow:hover {
+  color: #722872;
+  cursor: pointer;
+}
+
+.moreInfoBin {
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  font-size: 22px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.moreInfoBin ul {
+  list-style-type: none;
+  margin: 0;
+}
+.categories {
+  padding-left: 0;
+}
+
+.wait {
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: left;
+  border-radius: 15px;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 180px auto 0;
+  font-size: 22px;
+  width: 25%;
+}

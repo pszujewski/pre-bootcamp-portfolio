@@ -22,6 +22,12 @@ body {
   margin: 0 auto;
   justify-content: space-around;
 }
+.session-op {
+  cursor: pointer;
+}
+.break-op {
+  cursor: pointer;
+}
 
 ul {
   list-style: none;

@@ -1,5 +1,6 @@
 $(document).ready(function() {
-// Function declarations
+
+// ==== Function declarations ===
   function setBtnCss(toActivate, deactivate1, deactivate2) {
     $("#"+toActivate).addClass("active");
     $("#"+deactivate1).removeClass("active");
@@ -24,7 +25,9 @@ $(document).ready(function() {
       findPosition();
     }
   }
-// Global Variables
+
+// ==== Global Variables ====
+
   var didScroll = false;
   var stopId;
 
@@ -33,7 +36,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() { didScroll = true; });
 
-  $(".btn").on("click", function() {
+  $(".bttnn").on("click", function() {
     var correction;
     if ($(document).width() > 780) {
       correction = 100;
@@ -55,4 +58,14 @@ $(document).ready(function() {
       stopId = setInterval(intervalCallback, 250);
     }, 1050);
   });
+
+  $(".contactLeft i").on({
+    mouseenter: function () {
+        $(".contactLeft i").removeClass("fa-envelope-o").addClass("fa-envelope-open-o");
+    },
+    mouseleave: function () {
+        $(".contactLeft i").removeClass("fa-envelope-open-o").addClass("fa-envelope-o");
+    }
+  });
+
 });
